@@ -1,0 +1,31 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Goodness of Fit Statistics}
+%latex.default(round(fitMeasures_df, 2), caption = paste("Goodness of fit statistics",     in_title), size = "scriptsize", longtable = T, ctable = F,     landscape = F, rowlabel = "", where = "!htbp", file = filename,     append = T)%
+\setlongtables{\scriptsize
+\begin{longtable}{lrrrrrrrr}\caption{Goodness of fit statistics in the validation of the adapted Portuguese IMI} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{chisq}&\multicolumn{1}{c}{AGFI}&\multicolumn{1}{c}{TLI}&\multicolumn{1}{c}{CFI}&\multicolumn{1}{c}{RMSEA}&\multicolumn{1}{c}{CI.lwr}&\multicolumn{1}{c}{CI.upr}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{chisq}&\multicolumn{1}{c}{AGFI}&\multicolumn{1}{c}{TLI}&\multicolumn{1}{c}{CFI}&\multicolumn{1}{c}{RMSEA}&\multicolumn{1}{c}{CI.lwr}&\multicolumn{1}{c}{CI.upr}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{round}
+Global sample.1&$$&$$&$$&$$&$$&$$&$$&$$\tabularnewline
+Global sample.Multidimensional model&$45.94$&$132.85$&$ 1$&$0.93$&$0.87$&$0.10$&$0.08$&$0.11$\tabularnewline
+Global sample.Second-order model&$42.67$&$135.08$&$ 1$&$0.91$&$0.86$&$0.10$&$0.09$&$0.12$\tabularnewline
+Global sample.Bi-factor model&$41.58$&$204.19$&$ 1$&$0.84$&$0.75$&$0.14$&$0.12$&$0.15$\tabularnewline
+\hline
+\end{longtable}}
+\begin{flushright}{\tiny df: degree of freedom; AGFI: Adjusted Goodness of Fit Index; CFI: Comparative Fit Index; TLI: Tucker-Lewis Index; RMSEA: Root Mean Square Error of Approximation }\end{flushright}
+
+\end{document}

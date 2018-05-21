@@ -1,0 +1,33 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Summary of Carless Responses}
+%latex.default(as.data.frame(dd$get_data()), rowname = NULL, caption = paste("Summary of careless responses",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{llllllllll}\caption{Summary of careless responses in the IMI data collected over the pilot empirical study} \tabularnewline
+\hline\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item06}&\multicolumn{1}{c}{Item09}&\multicolumn{1}{c}{...}&\multicolumn{1}{c}{Item22}&\multicolumn{1}{c}{Item23}&\multicolumn{1}{c}{Item24}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{c}{@@}&\multicolumn{1}{c}{UserID}&\multicolumn{1}{c}{Item01}&\multicolumn{1}{c}{Item02}&\multicolumn{1}{c}{Item06}&\multicolumn{1}{c}{Item09}&\multicolumn{1}{c}{...}&\multicolumn{1}{c}{Item22}&\multicolumn{1}{c}{Item23}&\multicolumn{1}{c}{Item24}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{as.data.frame}
+...&...&...&...&...&...&...&...&...&...\tabularnewline
+&77&7&1&4&4&...&4&4&4\tabularnewline
+---&78&4&5&3&4&...&6&NA&1\tabularnewline
+&79&7&5&2&1&...&1&7&1\tabularnewline
+...&...&...&...&...&...&...&...&...&...\tabularnewline
+\hline
+\end{longtable}}
+
+The response gathered by UserID 78 had been identified as careless response, and then, it has been removed from data analysis.
+
+\end{document}
